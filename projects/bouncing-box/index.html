@@ -32,6 +32,56 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+		header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            h1 {
+                margin: 10px;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+                border: 4px solid blue;
+                border-radius: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+                border: 2px solid yellow;
+                border-radius: 25px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
 	</style>
 
 </head>
@@ -95,7 +145,23 @@
 			box.on('click', handleBoxClick);
 		})();
 		</script>
-		
+			 <div id="all contents">
+                    <nav>
+            <header>Paul's website of mediocity </header>
+            <ul>
+                      <a href="/Op-Spark-Directory-2/index.html">Main Page</a>
+                      <a href="/Op-Spark-Directory-2/portfolio.html">Portfolio</a>
+                      <a href="/Op-Spark-Directory-2/nonOSProj.html">Extra Items</a>
+                      <a href="/Op-Spark-Directory-2/projects/bouncing-box/index2.html">>:]</a>            
+            </ul>
+        </nav>
+                <main>
+            <div class="content">
+                <ul id="portfolio">
+                </ul>
+            </div>
+        </main>
+        </div>
 <audio autoplay loop>
   <source src="/Op-Spark-Directory-2/Music/BRODY QUEST mid.mp3" type="audio/mpeg">
   Your browser does not support the audio tag.
