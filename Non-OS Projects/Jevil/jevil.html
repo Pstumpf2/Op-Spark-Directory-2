@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <style>
+        body{
+          background-image: url('/Non-OS Projects/Jevil/500c88b88b72092.gif');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #jevil {
+            margin-left: auto;
+            margin-right:auto;
+            display: block;
+            height: 500px;
+            width: 500px;
+            color: yellow;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            font-size: 32px;
+            cursor: pointer;
+            background-image:url('/Non-OS Projects/Jevil/jevil.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body> 
+
+<audio id="myAudio" autoplay loop>
+  <source src="/Non-OS Projects/Jevil/joker.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio><br>
+
+<button onclick="getPlaySpeed()" type="button">What is fests?</button>
+<button id='jevil' onclick="setPlaySpeed()" type="button"> I can do anything!</button>
+<button onclick="stahp()" type"button">Stop</button>
+
+<script>
+var x = document.getElementById("myAudio");
+
+function getPlaySpeed() { 
+  alert("Like "+x.playbackRate+" fests");
+} 
+
+function setPlaySpeed() { 
+  var y = x.playbackrate
+  x.playbackRate = x.playbackRate + 0.125
+}
+function stahp(){
+    x.playbackRate = 0
+}
+</script> 
+
+</body> 
+</html>
