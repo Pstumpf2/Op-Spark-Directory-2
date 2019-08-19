@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+    <style>
+            body {
+                
+                background: linear-gradient(to bottom right, #3399ff 0%, #cc66ff 100%);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                margin: 0;
+                font-family: "Comic Sans MS";
+                
+            }
+            bodyt {
+                background-image: url("https://media.giphy.com/media/oz45ELYgMoYVsZqmor/giphy.gif");
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border: 4px solid blue;
+                border-radius: 25px;
+                }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(225, 225, 225);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    .sidenav{
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background: linear-gradient(to right, #0099ff 0%, #66ffff 100%);
+                overflow-x: hidden;
+                transition: 0.7s;
+                padding-top: 60px;
+            }
+            .sidenav a{
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: white;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav a:hover {
+                color:#6666ff;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+                border: 6px solid yellow;
+                border-radius: 25px;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+        <title>Paul's most amazing site on the interwebs</title>
+    </head>
+    
+    <body>
+        <audio autoplay loop>
+  <source src="/Op-Spark-Directory-2/Music/justcantgetenough.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+        <div id="all-contents">
+            <nav>
+                <header>Paul's website of mediocrity</header>
+                <ul>
+                <span style="font-size:30px;cursor:pointer;color:#cccccc" onclick="openNav()">&#9956; open</span>
+                </ul>
+            </nav>
+            
+            <main>
+                <div class="sidebar">
+                    <img src= '/Op-Spark-Directory-2/Images/woo.gif'>
+                <div class="content">
+                    <header>Welcome to my website!!!1</header>
+                        <p>I haves many wares</p>
+                            <section class="interest">
+                                <header>Items availibul</header>
+                                <ul>
+                                    <li><a href="/Op-Spark-Directory-2/portfolio.html">Portfolio of Operation Spark items</a></li>
+                                    <li><a href="/Op-Spark-Directory-2/nonOSProj.html">Etra tinhg I added meself</a></li>
+                                    <li><a href="/Op-Spark-Directory-2/projects/bouncing-box/index2.html">ajfhg!</a></li>
+                                    <li><a href="/Op-Spark-Directory-2/index.html">About me</a></li>
+                                </ul>
+                            </section>
+ <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a href="/Op-Spark-Directory-2/intro.html">Main Page</a>
+                      <a href="/Op-Spark-Directory-2/portfolio.html">Portfolio</a>
+                      <a href="/Op-Spark-Directory-2/nonOSProj.html">Extra Items</a>
+                      <a href="/Op-Spark-Directory-2/projects/bouncing-box/index2.html">>:]</a>
+                <script>
+                    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+                </script>
+            </main>
+        </div>
+    </body>
+</html>    
