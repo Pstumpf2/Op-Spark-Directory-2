@@ -119,6 +119,7 @@
 			speed = 10;
 			direction = 1;
 			box.css('left', position);
+			box.text(points);
 			
 			function add(text){
 			    return text + ' >:]'
@@ -140,6 +141,7 @@
 				points = points + 1
 				speed = speed + 3;
 				position = 1;
+				box.text(points)
 				};
 
 			//this calls update every 50 milliseconds
