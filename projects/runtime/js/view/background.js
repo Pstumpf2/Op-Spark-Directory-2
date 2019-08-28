@@ -48,7 +48,7 @@ var background = function (window) {
 
             background.addChild(circle);
 
-            var download = draw.bitmap('/projects/circularity/img/download.png');
+            var download = draw.bitmap('/Op-Spark-Directory-2/projects/circularity/img/download.png');
             download.x = 300;
             download.y = 25;
             download.scaleX = 5.0;
@@ -66,7 +66,7 @@ var background = function (window) {
                 buildings.push(building);
             }
             // TODO 4: Part 1 - Add a tree
-            tree = draw.bitmap('/projects/runtime/img/berd.png');
+            tree = draw.bitmap('/Op-Spark-Directory-2/projects/runtime/img/berd.png');
             tree.x = 0;
             tree.y = 300;
             tree.scaleX = 0.1
