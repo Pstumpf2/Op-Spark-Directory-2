@@ -183,7 +183,7 @@ var level01 = function (window) {
         wed.velocityX = -3;
         wed.onPlayerCollision = function() {
             wed.shrink();
-            wed.changeIntegrity(60)
+            game.changeIntegrity(60);
         };
         }
         //cyoob info
@@ -199,7 +199,7 @@ var level01 = function (window) {
         box.velocityX = -3;
         box.onPlayerCollision = function() {
             box.shrink();
-            box.increaseScore(700)
+            game.increaseScore(700);
         };
         }
         //win info
@@ -214,7 +214,7 @@ var level01 = function (window) {
         wine.scaleY = 0.3;
         win.addChild(wine);
         game.addGameItem(win);
-        win.velocityX = -0.5;
+        win.velocityX = -0.8;
         win.onPlayerCollision = function() {
         alert("you has winned!!!1")
         win.onProjectileCollision = function(){
